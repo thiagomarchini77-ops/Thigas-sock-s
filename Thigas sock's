@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Meias</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4b2c82, #6c4ab6);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-weight: 600;
+      color: #4b2c82;
+      margin-bottom: 8px;
+    }
+
+    .note {
+      font-size: 0.75rem;
+      color: #777;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🧦 Catálogo de Meias</h1>
+    <p>Catálogo informativo • Pedidos via WhatsApp ou Instagram</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x400?text=Meia+Preta">
+      <h3>Meia Preta Básica</h3>
+      <p class="price">R$ 19,90</p>
+      <p class="note">Entre em contato para comprar</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x400?text=Meia+Branca">
+      <h3>Meia Branca Esportiva</h3>
+      <p class="price">R$ 22,90</p>
+      <p class="note">Entre em contato para comprar</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x400?text=Meia+Colorida">
+      <h3>Meia Colorida Estampada</h3>
+      <p class="price">R$ 29,90</p>
+      <p class="note">Entre em contato para comprar</p>
+    </div>
+  </main>
+
+  <footer>
+    📦 Atendimento exclusivamente online • 💬 WhatsApp / Instagram
+  </footer>
+
+</body>
+</html>
